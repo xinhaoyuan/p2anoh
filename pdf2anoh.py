@@ -7,7 +7,7 @@ import simpleon
 
 def main(args):
 	LOCAL_DIR = os.path.dirname(os.path.abspath(__file__))
-	argparser = simpleon.SimpleONParser()
+	argparser = simpleon.SimpleONParser(True, False)
 	try:
 		argparser.parse_lines(args)
 		args = []
