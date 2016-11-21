@@ -20,7 +20,7 @@ def main(args):
 		args = None
 		
 	p2hex_binary = LOCAL_DIR + "/bin/p2hex/pdf2htmlEX"
-	p2hex_opt = [ "--zoom", "1.4" ]
+	p2hex_opt = [ "--zoom", "1.5" ]
 	input = None
 	output = None
 	library_path = LOCAL_DIR + "/lib"
