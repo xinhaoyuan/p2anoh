@@ -1,0 +1,9 @@
+.local-storage-sync {
+	position: fixed;
+	top: 0;
+	right: 0;
+	z-index: 2000;
+}
+
+#local-storage-load, #local-storage-save { display: inline-block; padding: 2pt; margin-top: 2pt; margin-right: 2pt; border: 1px solid #000000; background: #d0d0d0; }
+#local-storage-import-input { display: none; }
