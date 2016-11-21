@@ -30,14 +30,14 @@ def main(args):
 			continue
 		if "p2hex" in item:
 			p2hex_binary = item["p2hex"]
-		if "p2hex-opt-base" in item:
-			p2hex_opt = item["p2hex-opt-base"]
-		if "p2hex-opt" in item:
-			p2hex_opt.extend(item["p2hex-opt"])
-		if "input" in item:
-			input = item["input"]
-		if "output" in item:
-			output = item["output"]
+		if "opt-base" in item:
+			p2hex_opt = item["opt-base"]
+		if "opt" in item:
+			p2hex_opt.extend(item["opt"])
+		if "in" in item:
+			input = item["in"]
+		if "out" in item:
+			output = item["out"]
 		if "lib-path" in item:
 			library_path = item["lib-path"]
 			
