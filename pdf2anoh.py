@@ -20,7 +20,7 @@ def main(args):
 		args = None
 		
 	p2hex_binary = LOCAL_DIR + "/bin/p2hex/pdf2htmlEX"
-	p2hex_opt = None
+	p2hex_opt = [ "--zoom", "1.4" ]
 	input = None
 	output = None
 	library_path = LOCAL_DIR + "/lib"
@@ -30,8 +30,10 @@ def main(args):
 			continue
 		if "p2hex" in item:
 			p2hex_binary = item["p2hex"]
+		if "p2hex-opt-base" in item:
+			p2hex_opt = item["p2hex-opt-base"]
 		if "p2hex-opt" in item:
-			p2hex_opt = item["p2hex-opt"]
+			p2hex_opt.extend(item["p2hex-opt"])
 		if "input" in item:
 			input = item["input"]
 		if "output" in item:
